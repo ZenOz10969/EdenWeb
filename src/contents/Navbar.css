@@ -1,0 +1,66 @@
+/* Add styles for the hamburger menu icon */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hamburger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger-menu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 1001; /* Ensure the hamburger menu appears above the navigation menu */
+    }
+  
+    .menu-open {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: #333;
+      padding-top: 60px; /* Adjust the top padding to account for the space taken up by the hamburger menu */
+    }
+  
+    .menu-open li {
+      margin: 20px;
+    }
+  }
+  
+  /* Navbar.css */
+  
+  .hamburger-menu {
+    display: block; /* Ensure visibility on smaller screens */
+    cursor: pointer;
+    padding: 10px;
+    position: absolute; /* Position at top left */
+    top: 10px; /* Adjust spacing as needed */
+    left: 10px; /* Adjust spacing as needed */
+  }
+  
+  .hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0; /* Hide middle bar when menu is active */
+  }
+  
+  .hamburger-menu .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff; /* Adjust color as needed */
+    margin-bottom: 5px;
+  }
+  
+  .menu-open {
+    /* Styles for open menu (e.g., display: block, flex-direction: column) */
+  }
+  

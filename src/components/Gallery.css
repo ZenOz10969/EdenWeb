@@ -1,0 +1,42 @@
+.gallery {
+    color: white;
+    position: absolute;
+    left: 50%;
+    bottom: 20%; /* Adjust as needed */
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .image-grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-grid img:hover {
+    transform: scale(1.05);
+  }
+  /* Style for the "See All" button */
+.see-all-button {
+    background-color: transparent; /* Set background color to transparent */
+    color: white; /* Set text color to white */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Set cursor to pointer */
+  }
+  
+  /* Style for the "See All" button on hover */
+  .see-all-button:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  

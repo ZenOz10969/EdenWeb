@@ -1,0 +1,361 @@
+/* Navbar.css */
+
+:root {
+  --sidebar-flex: 1.5; /* Adjust flex value for menu width */
+  --condiv-flex: 6; /* Adjust flex value for content area width */
+  --fontsize-p: 1.2rem;
+  --fontsize-nav: 1.6rem;
+  --typing-font: 3rem;
+  background-color: #2E2E2E;
+}
+
+/* General navbar styles */
+.navbar {
+  padding: 20px 30px; /* Adjust padding as needed */
+  background-color: #333;
+  position: fixed; /* Fix navbar to top of viewport */
+  top: 0; /* Position at top edge */
+  left: 0; /* Position at left edge (will be overridden later) */
+  width: 100%; /* Stretch to full width */
+  z-index: 100; /* Ensure navbar stays above other elements */
+  display: flex; /* Enable flexbox for horizontal layout */
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Vertically align items in the center */
+}
+
+/* Navigation items */
+.navbar ul {
+  font-size: var(--fontsize-nav);
+  list-style: none;
+  display: flex; /* Maintain horizontal layout */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.navbar ul li {
+  margin: 0 15px; /* Adjust margin for spacing */
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px; /* Add some padding for better click target area */
+  transition: color 0.3s ease-in-out; /* Add a smooth color transition on hover */
+}
+
+.navbar ul li a:hover {
+  color: #f1f1f1; /* Change color on hover */
+}
+
+/* Active navigation item */
+.navbar ul li.active a {
+  color: #fff; /* Change color for active item */
+}
+
+/* Playnow button (assuming using Navitems component) */
+.navbar ul li.Playnow a {
+  background-color: #00e0
+}
+
+
+/* Add styles for the "Play Now" button */
+.play-now-button {
+  position: fixed;
+  bottom: 250px; /* Adjust the bottom position as needed */
+  left: 50%; /* Align the button horizontally at the middle */
+  transform: translateX(-50%);
+  padding: 30px 90px;
+  background-color: #D8971D;
+  color: #222222;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.play-now-button:hover {
+  background-color: #D8971D;
+}
+
+.navbar {
+  position: relative; /* Ensure the Navbar is set to a relative position */
+}
+
+.logo-container {
+  position: absolute; /* Position the logo container absolutely within the Navbar */
+  bottom: 0; /* Align the logo container to the bottom */
+}
+
+
+.logo {
+  width: 1px; /* Adjust the width of the logo as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.condiv {
+  padding: 100px;
+  background-color: #f4f5f9;
+  flex: var(--condiv-flex);
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profilepic {
+  border-radius: 50%;
+  width: 500px;
+  margin: 30px;
+}
+
+
+.typingeffect {
+  font-size: var(--typing-font);
+  margin-bottom: 30px;
+}
+
+.about {
+  text-align: center;
+}
+.subtopic {
+  margin: 10px 10px 30px 10px !important;
+}
+h1,h2,h3,h4 {
+  margin: 10px;
+}
+p {
+  font-size: var(--fontsize-p);
+}
+
+.widecard {
+  display: flex;
+  margin: 30px 0px 30px 0px;
+  transition: .3s;
+  border-radius: 10px;
+  padding: .5rem;
+}
+.widecard:hover {
+  color: #fff;
+  background: #333;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
+
+.skills ul {
+  display: flex;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+}
+.skills ul li {
+  list-style: none;
+  margin: 30px;
+}
+
+.active {
+  font-weight: bolder;
+}
+
+.condiv {
+  padding: 100px;
+  background-color: #f4f5f9;
+  flex: var(--condiv-flex);
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profilepic {
+  border-radius: 50%;
+  width: 500px;
+  margin: 30px;
+}
+
+.social {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  bottom: 60px;
+}
+
+.social i {
+  padding: 0 15px; /* Adjust padding for spacing */
+  font-size: 25px;
+  color: #FFFFFF;
+}
+
+.social i:hover {
+  color: #FFFFFF;
+}
+
+.typingeffect {
+  font-size: var(--typing-font);
+  margin-bottom: 30px;
+}
+
+.about {
+  text-align: center;
+}
+.subtopic {
+  margin: 10px 10px 30px 10px !important;
+}
+h1,h2,h3,h4 {
+  margin: 10px;
+}
+p {
+  font-size: var(--fontsize-p);
+}
+
+.widecard {
+  display: flex;
+  margin: 30px 0px 30px 0px;
+  transition: .3s;
+  border-radius: 10px;
+  padding: .5rem;
+}
+.widecard:hover {
+  color: #fff;
+  background: #333;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
+
+.skills ul {
+  display: flex;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+}
+.skills ul li {
+  list-style: none;
+  margin: 30px;
+}
+
+.active {
+  font-weight: bolder;
+}
+
+/* Add styles for the hamburger menu icon */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-menu .line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1001; /* Ensure the hamburger menu appears above the navigation menu */
+  }
+
+  .menu-open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    padding-top: 60px; /* Adjust the top padding to account for the space taken up by the hamburger menu */
+  }
+
+  .menu-open li {
+    margin: 20px;
+  }
+}
+
+/* Navbar.css */
+
+.hamburger-menu {
+  display: block; /* Ensure visibility on smaller screens */
+  cursor: pointer;
+  padding: 10px;
+  position: absolute; /* Position at top left */
+  top: 10px; /* Adjust spacing as needed */
+  left: 10px; /* Adjust spacing as needed */
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+  opacity: 0; /* Hide middle bar when menu is active */
+}
+
+.hamburger-menu .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff; /* Adjust color as needed */
+  margin-bottom: 5px;
+}
+
+.menu-open {
+  /* Styles for open menu (e.g., display: block, flex-direction: column) */
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  position: absolute;
+  bottom: -100x; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.picture-container {
+  position: relative;
+}
+
+.picture-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.icon-container button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+}
+
+.back-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.back-to-top-button:hover {
+  background-color: #555;
+}
